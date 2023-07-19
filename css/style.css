@@ -48,6 +48,8 @@ a {
 html {
   /* 10px / 16px */
   font-size: 62.5%;
+  /* This is needed for mobile nav to be hidden */
+  overflow-x: hidden;
 }
 
 body {
@@ -55,6 +57,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--text-color);
+
+  /* This is needed for mobile nav to be hidden */
+  overflow-x: hidden;
 }
 
 .container {
@@ -226,6 +231,8 @@ body {
   align-items: center;
   padding: 3.2rem 4.8rem 8rem;
   background-color: var(--bg-color);
+  /* This is needed for mobile navigation to be positioned absolute to the header */
+  position: relative;
 }
 
 .header__logo {
@@ -234,7 +241,7 @@ body {
 
 .header__nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 4.8rem;
   list-style: none;
 }
@@ -264,6 +271,28 @@ body {
   background-color: var(--primary-color-darken-10);
 }
 
+/* MOBILE NAV */
+.header__nav-btn {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header__nav-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--text-color-heading)
+}
+
+.header__nav-icon[name="menu-outline"] {
+}
+
+.header__nav-icon[name="close-outline"] {
+  display: none;
+}
+
+
 /* HERO */
 
 .hero__section {
@@ -283,6 +312,11 @@ body {
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: var(--section-gap--md);
+}
+
+.hero__btns {
+  display: flex;
+  gap: 1.6rem;
 }
 
 .hero__delivered {
@@ -600,7 +634,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 40rem;
+  width: 38rem;
   border: 2px solid var(--bg-color);
   border-radius: 9px;
   padding: 4.8rem;

@@ -15,6 +15,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 
+    <script src="js/script.js" defer></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
   </head>
@@ -35,6 +37,11 @@
           </li>
         </ul>
       </nav>
+
+      <button class="header__nav-btn">
+        <ion-icon name="menu-outline" class="header__nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="header__nav-icon"></ion-icon>
+      </button>
     </header>
     <main>
       <!-- HERO -->
@@ -48,8 +55,10 @@
               The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to
               your personal tastes and nutritional needs.
             </p>
-            <a href="#" class="btn btn--primary margin-right--sm">Start eating well</a>
-            <a href="#" class="btn btn--secondary">Learn mode &darr;</a>
+            <div class="hero__btns">
+              <a href="#" class="btn btn--primary _margin-right--sm">Start eating well</a>
+              <a href="#" class="btn btn--secondary">Learn mode &darr;</a>
+            </div>
 
             <div class="hero__delivered">
               <div class="hero__delivered-imgs">
@@ -85,7 +94,7 @@
 
       <!-- HOW IT WORKS -->
       <section class="how__section" id="how">
-        <div class="container">
+        <div class="container how__section-header">
           <p class="heading--subheading">How it works</p>
           <h2 class="heading--secondary">Your daily dose of health in 3 simple steps</h2>
         </div>
@@ -501,7 +510,7 @@
             </li>
           </ul>
           <p class="footer__copyright">
-            Copyright &copy; 2023 by Omnifood, Inc.<br />
+            Copyright &copy; <span class="year">2023</span> by Omnifood, Inc.<br />
             All rights reserved.
           </p>
         </div>
