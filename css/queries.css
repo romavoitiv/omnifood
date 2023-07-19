@@ -159,7 +159,7 @@
 
     /* Make sure that the parent is relative and has overflow set to hidden */
     transform: translateX(100%);
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-in;
 
     /* Setting display to none doesn't allow animations or transitions */
     opacity: 0;
