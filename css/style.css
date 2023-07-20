@@ -50,6 +50,8 @@ html {
   font-size: 62.5%;
   /* This is needed for mobile nav to be hidden */
   overflow-x: hidden;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -273,15 +275,18 @@ body {
 
 /* MOBILE NAV */
 .header__nav-btn {
+  height: 4.8rem;
+  width: 4.8rem;
   display: none;
   border: none;
   background: none;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .header__nav-icon {
-  height: 4.8rem;
-  width: 4.8rem;
+  width: 100%;
+  height: 100%;
   color: var(--text-color-heading)
 }
 
@@ -741,6 +746,7 @@ body {
 /* CTA */
 
 .cta-section {
+  padding-top: 4.8rem;
   margin-bottom: var(--section-gap--2xl);
 }
 

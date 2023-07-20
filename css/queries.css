@@ -189,7 +189,7 @@
   }
 
   .nav-open .header__nav-icon[name="close-outline"] {
-    display: inline-block;
+    display: block;
   }
 
   .nav-open .header__nav-icon[name="menu-outline"] {
