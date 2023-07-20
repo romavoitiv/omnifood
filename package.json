@@ -1,0 +1,30 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx postcss css/*.css -d dist/ -w",
+    "build": "npx postcss css/*.css -d dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romavoitiv/omnifood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romavoitiv/omnifood/issues"
+  },
+  "homepage": "https://github.com/romavoitiv/omnifood#readme",
+    "browserslist": [
+    "> 1%",
+    "last 5 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0"
+  }
+}
