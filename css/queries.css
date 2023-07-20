@@ -361,3 +361,53 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 
 64 / 80 / 96 / 128
 */
+
+/* Fix for Safari flexbox gap */
+.no-flexbox-gap .header__nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list__item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list__icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .hero__delivered {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meals-card__attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meals-card__icon {
+  margin-right: 1.6rem;
+}
+
+/* .no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+} */
+
+.no-flexbox-gap .footer__social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer__nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .header__nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 60em) {
+  .no-flexbox-gap .header__nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}

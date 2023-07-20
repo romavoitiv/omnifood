@@ -390,51 +390,51 @@
 */
 
 /* Fix for Safari flexbox gap */
-/* .no-flexbox-gap .main-nav-list li:not(:last-child) {
+.no-flexbox-gap .header__nav-list li:not(:last-child) {
   margin-right: 4.8rem;
 }
 
-.no-flexbox-gap .list-item:not(:last-child) {
+.no-flexbox-gap .list__item:not(:last-child) {
   margin-bottom: 1.6rem;
 }
 
-.no-flexbox-gap .list-icon:not(:last-child) {
+.no-flexbox-gap .list__icon:not(:last-child) {
   margin-right: 1.6rem;
 }
 
-.no-flexbox-gap .delivered-faces {
+.no-flexbox-gap .hero__delivered {
   margin-right: 1.6rem;
 }
 
-.no-flexbox-gap .meal-attribute:not(:last-child) {
+.no-flexbox-gap .meals-card__attribute:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.no-flexbox-gap .meal-icon {
+.no-flexbox-gap .meals-card__icon {
   margin-right: 1.6rem;
 }
 
-.no-flexbox-gap .footer-row div:not(:last-child) {
+/* .no-flexbox-gap .footer-row div:not(:last-child) {
   margin-right: 6.4rem;
-}
+} */
 
-.no-flexbox-gap .social-links li:not(:last-child) {
+.no-flexbox-gap .footer__social-links li:not(:last-child) {
   margin-right: 2.4rem;
 }
 
-.no-flexbox-gap .footer-nav li:not(:last-child) {
+.no-flexbox-gap .footer__nav li:not(:last-child) {
   margin-bottom: 2.4rem;
 }
 
 @media (max-width: 75em) {
-  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+  .no-flexbox-gap .header__nav-list li:not(:last-child) {
     margin-right: 3.2rem;
   }
 }
 
-@media (max-width: 59em) {
-  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+@media (max-width: 60em) {
+  .no-flexbox-gap .header__nav-list li:not(:last-child) {
     margin-right: 0;
     margin-bottom: 4.8rem;
   }
-} */
+}
