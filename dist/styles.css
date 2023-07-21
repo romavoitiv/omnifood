@@ -496,8 +496,7 @@ body {
 }
 
 .how__img {
-  width: 38%;
-  height: auto;
+  max-width: 38%;
 }
 
 /* MEALS SECTION */
