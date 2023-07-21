@@ -366,8 +366,18 @@
 64 / 80 / 96 / 128
 */
 
+/*
+  This can also be used
+  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69
+*/
+/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  &:not(:last-child) {
+    margin-right: 5%;
+  }
+} */
+
 /* Fix for Safari flexbox gap */
-.no-flexbox-gap .header__nav-list li:not(:last-child) {
+/* .no-flexbox-gap .header__nav-list li:not(:last-child) {
   margin-right: 4.8rem;
 }
 
@@ -391,10 +401,6 @@
   margin-right: 1.6rem;
 }
 
-/* .no-flexbox-gap .footer-row div:not(:last-child) {
-  margin-right: 6.4rem;
-} */
-
 .no-flexbox-gap .footer__social-links li:not(:last-child) {
   margin-right: 2.4rem;
 }
@@ -414,4 +420,4 @@
     margin-right: 0;
     margin-bottom: 4.8rem;
   }
-}
+} */
