@@ -98,6 +98,7 @@
 
   .hero__img {
     max-width: 60%;
+    height: auto;
   }
 
   .how__number {
@@ -144,7 +145,7 @@
   .header__nav-btn {
     display: block;
   }
-  
+
   .header__nav {
     display: flex;
     align-items: center;
@@ -165,7 +166,6 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-
 
     background-color: rgba(255, 255, 255, 0.95);
   }
@@ -188,11 +188,11 @@
     transform: translateX(0);
   }
 
-  .nav-open .header__nav-icon[name="close-outline"] {
+  .nav-open .header__nav-icon[name='close-outline'] {
     display: block;
   }
 
-  .nav-open .header__nav-icon[name="menu-outline"] {
+  .nav-open .header__nav-icon[name='menu-outline'] {
     display: none;
   }
 }
@@ -254,6 +254,10 @@
   .btn:link,
   .btn:visited {
     padding: 2.4rem 2.4rem;
+  }
+
+  .hero__delivered {
+    flex-direction: column;
   }
 
   .hero__img {

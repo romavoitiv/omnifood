@@ -310,13 +310,13 @@ body {
 .header__nav-icon {
   width: 100%;
   height: 100%;
-  color: var(--text-color-heading)
+  color: var(--text-color-heading);
 }
 
-.header__nav-icon[name="menu-outline"] {
+.header__nav-icon[name='menu-outline'] {
 }
 
-.header__nav-icon[name="close-outline"] {
+.header__nav-icon[name='close-outline'] {
   display: none;
 }
 
@@ -329,7 +329,7 @@ body {
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255,0.97);
+  background-color: rgba(255, 255, 255, 0.97);
   z-index: 999;
   -webkit-box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
           box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
@@ -355,6 +355,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 2.4rem;
+     -moz-column-gap: 2.4rem;
+          column-gap: 2.4rem;
 }
 
 .hero__description {
@@ -407,6 +410,7 @@ body {
 
 .hero__img {
   max-width: 100%;
+  height: auto;
 }
 
 /* FEATURED */
@@ -497,6 +501,7 @@ body {
 
 .how__img {
   max-width: 38%;
+  height: auto;
 }
 
 /* MEALS SECTION */
