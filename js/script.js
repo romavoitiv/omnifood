@@ -5,15 +5,16 @@ const headerEl = document.querySelector('.header');
 const year = document.querySelector('.year');
 year.textContent = new Date().getFullYear();
 
-
-// function disableMobileScroll() {
-    
-// }
-// function enableMobileScroll() {
-//     document.body.removeEventListener('touchmove', preventDefault, { passive: false });
-// }
-
-
+// Helper function to handle mobile scroll
+function preventDefault(e){
+    e.preventDefault();
+}
+function disableMobileScroll() {
+    document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+function enableMobileScroll() {
+    document.body.removeEventListener('touchmove', preventDefault, { passive: false });
+}
 
 // Handle burger (nav-open class)
 const htmlEl = document.body.parentElement;
@@ -22,16 +23,8 @@ const navBtn = document.querySelector('.header__nav-btn');
 navBtn.addEventListener('click', function () {
   htmlEl.classList.toggle('nav-open');
 
-  // htmlEl.classList.contains('nav-open') ? disableMobileScroll() : enableMobileScroll();
+  htmlEl.classList.contains('nav-open') ? disableMobileScroll() : enableMobileScroll();
 });
-
-document.body.addEventListener('touchmove', preventDefault, { passive: false });
-
-function preventDefault(e) {
-  if (htmlEl.classList.contains('nav-open')) {
-    e.preventDefault();
-  }
-}
 
 // handle smooth scrolling
 const allLinks = document.querySelectorAll('a:link');
@@ -55,7 +48,7 @@ allLinks.forEach((link) => {
 
     if (link.classList.contains('header__nav-link')) {
       htmlEl.classList.remove('nav-open');
-      // enableMobileScroll();
+      enableMobileScroll();
     }
   })
 })
