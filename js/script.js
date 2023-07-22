@@ -22,9 +22,7 @@ const navBtn = document.querySelector('.header__nav-btn');
 navBtn.addEventListener('click', function () {
   htmlEl.classList.toggle('nav-open');
 
-  if (htmlEl.classList.contains('nav-open')) {
-    disableScroll();
-  }
+  htmlEl.classList.contains('nav-open') ? disableScroll() : enableScroll();
 });
 
 // handle smooth scrolling
