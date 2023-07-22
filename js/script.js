@@ -5,11 +5,11 @@ const headerEl = document.querySelector('.header');
 const year = document.querySelector('.year');
 year.textContent = new Date().getFullYear();
 
-// Handle nav-open
+// Handle burger (nav-open class)
 const header = document.querySelector('.header');
 const navBtn = document.querySelector('.header__nav-btn');
 navBtn.addEventListener('click', function () {
-  header.classList.toggle('nav-open');
+  document.body.parentElement.classList.toggle('nav-open');
 });
 
 // handle smooth scrolling

@@ -217,6 +217,10 @@
   .nav-open .header__nav-icon[name='menu-outline'] {
     display: none;
   }
+
+  html.nav-open {
+    overflow-y: hidden;
+  }
 }
 
 /* Width 768px or less (Small Tablets) */
