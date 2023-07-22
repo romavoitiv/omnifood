@@ -312,12 +312,15 @@
   }
 
   .featured__logos {
-    gap: 1.2rem;
-    /* flex-wrap: wrap; */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 
   .featured__logos img {
-    height: 1.2rem;
+    height: 2rem;
   }
 
   .heading--subheading,
