@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "npx postcss css/*.css -d dist/ -w",
-    "build": "npx postcss css/*.css -d dist/"
+    "watch": "npx postcss css/main.css -d dist/ -w",
+    "build": "cross-env NODE_ENV=production npx postcss css/main.css -d dist/"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,16 @@
     "url": "https://github.com/romavoitiv/omnifood/issues"
   },
   "homepage": "https://github.com/romavoitiv/omnifood#readme",
-    "browserslist": [
+  "browserslist": [
     "> 1%",
     "last 5 versions"
   ],
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "cssnano": "^6.0.1",
     "postcss": "^8.4.26",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0"
   }
 }
