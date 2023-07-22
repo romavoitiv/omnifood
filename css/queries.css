@@ -199,6 +199,10 @@
   html.nav-open {
     overflow-y: hidden;
   }
+  html.nav-open body {
+    overflow-y: hidden;
+    height: 100%;
+  }
 }
 
 /* Width 768px or less (Small Tablets) */
