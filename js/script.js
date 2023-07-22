@@ -6,10 +6,17 @@ const year = document.querySelector('.year');
 year.textContent = new Date().getFullYear();
 
 // Handle burger (nav-open class)
+const htmlEl = document.body.parentElement;
 const header = document.querySelector('.header');
 const navBtn = document.querySelector('.header__nav-btn');
 navBtn.addEventListener('click', function () {
-  document.body.parentElement.classList.toggle('nav-open');
+  htmlEl.classList.toggle('nav-open');
+
+  if (htmlEl.classList.contains('nav-open')) {
+    document.ontouchmove = function (e) {
+      e.preventDefault();
+    }
+  }
 });
 
 // handle smooth scrolling
@@ -33,8 +40,8 @@ allLinks.forEach((link) => {
     }
 
     if (link.classList.contains('header__nav-link')) {
-
       headerEl.classList.remove('nav-open');
+      document.ontouchmove = null;
     }
   })
 })
