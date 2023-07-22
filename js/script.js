@@ -5,6 +5,16 @@ const headerEl = document.querySelector('.header');
 const year = document.querySelector('.year');
 year.textContent = new Date().getFullYear();
 
+function preventDefault(e){
+    e.preventDefault();
+}
+function disableScroll() {
+    document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+function enableScroll() {
+    document.body.removeEventListener('touchmove', preventDefault, { passive: false });
+}
+
 // Handle burger (nav-open class)
 const htmlEl = document.body.parentElement;
 const header = document.querySelector('.header');
@@ -13,9 +23,7 @@ navBtn.addEventListener('click', function () {
   htmlEl.classList.toggle('nav-open');
 
   if (htmlEl.classList.contains('nav-open')) {
-    document.ontouchmove = function (e) {
-      e.preventDefault();
-    }
+    disableScroll();
   }
 });
 
@@ -41,7 +49,7 @@ allLinks.forEach((link) => {
 
     if (link.classList.contains('header__nav-link')) {
       headerEl.classList.remove('nav-open');
-      document.ontouchmove = null;
+      enableScroll();
     }
   })
 })
