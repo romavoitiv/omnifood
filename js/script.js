@@ -8,10 +8,10 @@ year.textContent = new Date().getFullYear();
 function preventDefault(e){
     e.preventDefault();
 }
-function disableScroll() {
+function disableMobileScroll() {
     document.body.addEventListener('touchmove', preventDefault, { passive: false });
 }
-function enableScroll() {
+function enableMobileScroll() {
     document.body.removeEventListener('touchmove', preventDefault, { passive: false });
 }
 
@@ -22,7 +22,7 @@ const navBtn = document.querySelector('.header__nav-btn');
 navBtn.addEventListener('click', function () {
   htmlEl.classList.toggle('nav-open');
 
-  htmlEl.classList.contains('nav-open') ? disableScroll() : enableScroll();
+  htmlEl.classList.contains('nav-open') ? disableMobileScroll() : enableMobileScroll();
 });
 
 // handle smooth scrolling
@@ -46,8 +46,8 @@ allLinks.forEach((link) => {
     }
 
     if (link.classList.contains('header__nav-link')) {
-      headerEl.classList.remove('nav-open');
-      enableScroll();
+      htmlEl.classList.remove('nav-open');
+      enableMobileScroll();
     }
   })
 })
